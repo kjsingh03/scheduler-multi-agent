@@ -1,0 +1,1002 @@
+2025-06-27 18:14:41,216 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-27 18:14:41,217 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-27 18:14:41,217 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-27 18:14:41,220 - INFO - Added job "MultiAgentSystem.setup_schedules.<locals>.<lambda>" to job store "default"
+2025-06-27 18:14:41,220 - INFO - Added job "MultiAgentSystem.setup_schedules.<locals>.<lambda>" to job store "default"
+2025-06-27 18:14:41,221 - INFO - Added job "MultiAgentSystem.setup_schedules.<locals>.<lambda>" to job store "default"
+2025-06-27 18:14:41,221 - INFO - Scheduler started
+2025-06-27 18:14:41,221 - INFO - Multi-agent system started successfully
+2025-06-27 18:14:45,292 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<BaseAgent.message_listener() done, defined at C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py:72> exception=ConnectionError('Error 22 connecting to localhost:6379. 22.')>
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\redis\asyncio\connection.py", line 243, in connect
+    await self.retry.call_with_retry(
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\redis\asyncio\retry.py", line 59, in call_with_retry
+    return await do()
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\redis\asyncio\connection.py", line 650, in _connect
+    reader, writer = await asyncio.open_connection(
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\streams.py", line 52, in open_connection
+    transport, _ = await loop.create_connection(
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\base_events.py", line 1070, in create_connection
+    raise exceptions[0]
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\base_events.py", line 1050, in create_connection
+    sock = await self._connect_sock(
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\base_events.py", line 961, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\proactor_events.py", line 703, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\windows_events.py", line 817, in _poll
+    value = callback(transferred, key, ov)
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\windows_events.py", line 604, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] The remote computer refused the network connection
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 74, in message_listener
+    if msg := await self.comm_manager.get_message(self.agent_id):
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 56, in get_message
+    if await self.redis.llen(key):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\redis\asyncio\client.py", line 601, in execute_command
+    conn = self.connection or await pool.get_connection(command_name, **options)
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\redis\asyncio\connection.py", line 1040, in get_connection
+    await self.ensure_connection(connection)
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\redis\asyncio\connection.py", line 1062, in ensure_connection
+    await connection.connect()
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\redis\asyncio\connection.py", line 251, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 22 connecting to localhost:6379. 22.
+2025-06-27 18:14:45,308 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-4' coro=<BaseAgent.message_listener() done, defined at C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py:72> exception=ConnectionError('Error 22 connecting to localhost:6379. 22.')>
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\redis\asyncio\connection.py", line 243, in connect
+    await self.retry.call_with_retry(
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\redis\asyncio\retry.py", line 59, in call_with_retry
+    return await do()
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\redis\asyncio\connection.py", line 650, in _connect
+    reader, writer = await asyncio.open_connection(
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\streams.py", line 52, in open_connection
+    transport, _ = await loop.create_connection(
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\base_events.py", line 1070, in create_connection
+    raise exceptions[0]
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\base_events.py", line 1050, in create_connection
+    sock = await self._connect_sock(
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\base_events.py", line 961, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\proactor_events.py", line 703, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\windows_events.py", line 817, in _poll
+    value = callback(transferred, key, ov)
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\windows_events.py", line 604, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] The remote computer refused the network connection
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 74, in message_listener
+    if msg := await self.comm_manager.get_message(self.agent_id):
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 56, in get_message
+    if await self.redis.llen(key):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\redis\asyncio\client.py", line 601, in execute_command
+    conn = self.connection or await pool.get_connection(command_name, **options)
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\redis\asyncio\connection.py", line 1040, in get_connection
+    await self.ensure_connection(connection)
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\redis\asyncio\connection.py", line 1062, in ensure_connection
+    await connection.connect()
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\redis\asyncio\connection.py", line 251, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 22 connecting to localhost:6379. 22.
+2025-06-27 18:14:45,309 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-5' coro=<BaseAgent.message_listener() done, defined at C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py:72> exception=ConnectionError('Error 22 connecting to localhost:6379. 22.')>
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\redis\asyncio\connection.py", line 243, in connect
+    await self.retry.call_with_retry(
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\redis\asyncio\retry.py", line 59, in call_with_retry
+    return await do()
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\redis\asyncio\connection.py", line 650, in _connect
+    reader, writer = await asyncio.open_connection(
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\streams.py", line 52, in open_connection
+    transport, _ = await loop.create_connection(
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\base_events.py", line 1070, in create_connection
+    raise exceptions[0]
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\base_events.py", line 1050, in create_connection
+    sock = await self._connect_sock(
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\base_events.py", line 961, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\proactor_events.py", line 703, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\windows_events.py", line 817, in _poll
+    value = callback(transferred, key, ov)
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\windows_events.py", line 604, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] The remote computer refused the network connection
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 74, in message_listener
+    if msg := await self.comm_manager.get_message(self.agent_id):
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 56, in get_message
+    if await self.redis.llen(key):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\redis\asyncio\client.py", line 601, in execute_command
+    conn = self.connection or await pool.get_connection(command_name, **options)
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\redis\asyncio\connection.py", line 1040, in get_connection
+    await self.ensure_connection(connection)
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\redis\asyncio\connection.py", line 1062, in ensure_connection
+    await connection.connect()
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\redis\asyncio\connection.py", line 251, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 22 connecting to localhost:6379. 22.
+2025-06-27 18:15:11,226 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:15:41 IST)" (scheduled at 2025-06-27 18:15:11.216984+05:30)
+2025-06-27 18:15:11,226 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:15:41 IST)" (scheduled at 2025-06-27 18:15:11.217992+05:30)
+2025-06-27 18:15:11,226 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:15:41 IST)" (scheduled at 2025-06-27 18:15:11.217992+05:30)
+2025-06-27 18:15:11,228 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:15:41 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 192, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("wearables")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:15:11,229 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:15:41 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 187, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("tablets")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:15:11,229 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:15:41 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 182, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("phones")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:15:41,231 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:16:11 IST)" (scheduled at 2025-06-27 18:15:41.216984+05:30)
+2025-06-27 18:15:41,231 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:16:11 IST)" (scheduled at 2025-06-27 18:15:41.217992+05:30)
+2025-06-27 18:15:41,231 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:16:11 IST)" (scheduled at 2025-06-27 18:15:41.217992+05:30)
+2025-06-27 18:15:41,231 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:16:11 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 182, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("phones")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:15:41,232 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:16:11 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 187, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("tablets")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:15:41,232 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:16:11 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 192, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("wearables")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:16:11,221 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:16:41 IST)" (scheduled at 2025-06-27 18:16:11.216984+05:30)
+2025-06-27 18:16:11,222 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:16:41 IST)" (scheduled at 2025-06-27 18:16:11.217992+05:30)
+2025-06-27 18:16:11,222 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:16:41 IST)" (scheduled at 2025-06-27 18:16:11.217992+05:30)
+2025-06-27 18:16:11,222 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:16:41 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 182, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("phones")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:16:11,223 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:16:41 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 187, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("tablets")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:16:11,223 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:16:41 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 192, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("wearables")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:16:41,221 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:17:11 IST)" (scheduled at 2025-06-27 18:16:41.216984+05:30)
+2025-06-27 18:16:41,221 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:17:11 IST)" (scheduled at 2025-06-27 18:16:41.217992+05:30)
+2025-06-27 18:16:41,221 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:17:11 IST)" (scheduled at 2025-06-27 18:16:41.217992+05:30)
+2025-06-27 18:16:41,222 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:17:11 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 182, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("phones")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:16:41,222 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:17:11 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 187, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("tablets")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:16:41,223 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:17:11 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 192, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("wearables")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:17:11,230 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:17:41 IST)" (scheduled at 2025-06-27 18:17:11.216984+05:30)
+2025-06-27 18:17:11,230 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:17:41 IST)" (scheduled at 2025-06-27 18:17:11.217992+05:30)
+2025-06-27 18:17:11,230 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:17:41 IST)" (scheduled at 2025-06-27 18:17:11.217992+05:30)
+2025-06-27 18:17:11,232 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:17:41 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 182, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("phones")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:17:11,232 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:17:41 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 187, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("tablets")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:17:11,232 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:17:41 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 192, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("wearables")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:17:41,229 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:18:11 IST)" (scheduled at 2025-06-27 18:17:41.216984+05:30)
+2025-06-27 18:17:41,230 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:18:11 IST)" (scheduled at 2025-06-27 18:17:41.217992+05:30)
+2025-06-27 18:17:41,230 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:18:11 IST)" (scheduled at 2025-06-27 18:17:41.217992+05:30)
+2025-06-27 18:17:41,233 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:18:11 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 192, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("wearables")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:17:41,233 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:18:11 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 182, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("phones")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:17:41,233 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:18:11 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 187, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("tablets")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:18:11,218 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:18:41 IST)" (scheduled at 2025-06-27 18:18:11.216984+05:30)
+2025-06-27 18:18:11,218 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:18:41 IST)" (scheduled at 2025-06-27 18:18:11.217992+05:30)
+2025-06-27 18:18:11,218 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:18:41 IST)" (scheduled at 2025-06-27 18:18:11.217992+05:30)
+2025-06-27 18:18:11,219 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:18:41 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 182, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("phones")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:18:11,219 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:18:41 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 187, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("tablets")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:18:11,219 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:18:41 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 192, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("wearables")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:18:41,231 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:19:11 IST)" (scheduled at 2025-06-27 18:18:41.216984+05:30)
+2025-06-27 18:18:41,231 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:19:11 IST)" (scheduled at 2025-06-27 18:18:41.217992+05:30)
+2025-06-27 18:18:41,232 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:19:11 IST)" (scheduled at 2025-06-27 18:18:41.217992+05:30)
+2025-06-27 18:18:41,233 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:19:11 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 182, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("phones")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:18:41,233 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:19:11 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 187, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("tablets")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:18:41,233 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:19:11 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 192, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("wearables")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:19:11,230 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:19:41 IST)" (scheduled at 2025-06-27 18:19:11.216984+05:30)
+2025-06-27 18:19:11,231 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:19:41 IST)" (scheduled at 2025-06-27 18:19:11.217992+05:30)
+2025-06-27 18:19:11,231 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:19:41 IST)" (scheduled at 2025-06-27 18:19:11.217992+05:30)
+2025-06-27 18:19:11,232 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:19:41 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 182, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("phones")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:19:11,232 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:19:41 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 187, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("tablets")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:19:11,232 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:19:41 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 192, in <lambda>
+    lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch("wearables")),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:19:41,229 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:20:11 IST)" (scheduled at 2025-06-27 18:19:41.216984+05:30)
+2025-06-27 18:19:41,230 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:20:11 IST)" (scheduled at 2025-06-27 18:19:41.217992+05:30)
+2025-06-27 18:19:41,230 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:20:11 IST)" (scheduled at 2025-06-27 18:19:41.217992+05:30)
+2025-06-27 18:19:41,232 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:20:11 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 187, in <lambda>
+    price_text = price_elem.get_text(strip=True) if price_elem else "$0.00"
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:19:41,232 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:20:11 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 182, in <lambda>
+    name_elem = card.select_one('h3.heading-xs')
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:19:41,232 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:20:11 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 192, in <lambda>
+    price = float(price_match.group(1)) if price_match else 0.0
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:20:11,234 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:20:41 IST)" (scheduled at 2025-06-27 18:20:11.216984+05:30)
+2025-06-27 18:20:11,234 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:20:41 IST)" (scheduled at 2025-06-27 18:20:11.217992+05:30)
+2025-06-27 18:20:11,234 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:20:41 IST)" (scheduled at 2025-06-27 18:20:11.217992+05:30)
+2025-06-27 18:20:11,236 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:20:41 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 187, in <lambda>
+    price_text = price_elem.get_text(strip=True) if price_elem else "$0.00"
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:20:11,236 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:20:41 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 182, in <lambda>
+    name_elem = card.select_one('h3.heading-xs')
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:20:11,237 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:20:41 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 192, in <lambda>
+    price = float(price_match.group(1)) if price_match else 0.0
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:20:41,229 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:21:11 IST)" (scheduled at 2025-06-27 18:20:41.216984+05:30)
+2025-06-27 18:20:41,229 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:21:11 IST)" (scheduled at 2025-06-27 18:20:41.217992+05:30)
+2025-06-27 18:20:41,229 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:21:11 IST)" (scheduled at 2025-06-27 18:20:41.217992+05:30)
+2025-06-27 18:20:41,232 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:21:11 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 187, in <lambda>
+    price_text = price_elem.get_text(strip=True) if price_elem else "$0.00"
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:20:41,232 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:21:11 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 192, in <lambda>
+    price = float(price_match.group(1)) if price_match else 0.0
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:20:41,233 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:21:11 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 182, in <lambda>
+    name_elem = card.select_one('h3.heading-xs')
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:21:11,231 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:21:41 IST)" (scheduled at 2025-06-27 18:21:11.216984+05:30)
+2025-06-27 18:21:11,231 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:21:41 IST)" (scheduled at 2025-06-27 18:21:11.217992+05:30)
+2025-06-27 18:21:11,231 - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:21:41 IST)" (scheduled at 2025-06-27 18:21:11.217992+05:30)
+2025-06-27 18:21:11,233 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:21:41 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 192, in <lambda>
+    price = float(price_match.group(1)) if price_match else 0.0
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:21:11,233 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:21:41 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 182, in <lambda>
+    name_elem = card.select_one('h3.heading-xs')
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:21:11,233 - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 18:21:41 IST)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 187, in <lambda>
+    price_text = price_elem.get_text(strip=True) if price_elem else "$0.00"
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:21:12,429 - INFO - Stopping...
+2025-06-27 18:21:12,430 - INFO - Scheduler has been shut down
+2025-06-27 18:21:12,430 - INFO - Multi-agent system stopped
+2025-06-27 18:21:16,715 - __main__ - INFO - Starting Multi-Agent Product Scraper API...
+2025-06-27 18:21:16,716 - __main__ - INFO - Initializing Multi-Agent System...
+2025-06-27 18:21:16,716 - __main__ - INFO - Agent extractor_001 started
+2025-06-27 18:21:16,716 - __main__ - INFO - Agent formatter_001 started
+2025-06-27 18:21:16,717 - __main__ - INFO - Agent display_001 started
+2025-06-27 18:21:16,717 - __main__ - INFO - All agents initialized and started
+2025-06-27 18:21:16,719 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-27 18:21:16,720 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-27 18:21:16,720 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-27 18:21:16,723 - apscheduler.scheduler - INFO - Added job "MultiAgentSystem.setup_schedules.<locals>.<lambda>" to job store "default"
+2025-06-27 18:21:16,724 - apscheduler.scheduler - INFO - Added job "MultiAgentSystem.setup_schedules.<locals>.<lambda>" to job store "default"
+2025-06-27 18:21:16,724 - apscheduler.scheduler - INFO - Added job "MultiAgentSystem.setup_schedules.<locals>.<lambda>" to job store "default"
+2025-06-27 18:21:16,724 - apscheduler.scheduler - INFO - Scheduler started
+2025-06-27 18:21:16,724 - __main__ - INFO - Scheduled extraction jobs for 3 categories
+2025-06-27 18:21:16,725 - __main__ - INFO - Multi-Agent System is ready!
+2025-06-27 18:25:14,375 - __main__ - INFO - Stopping Multi-Agent System...
+2025-06-27 18:25:14,376 - __main__ - INFO - Agent extractor_001 stopped
+2025-06-27 18:25:14,376 - __main__ - INFO - Agent formatter_001 stopped
+2025-06-27 18:25:14,376 - __main__ - INFO - Agent display_001 stopped
+2025-06-27 18:25:14,376 - __main__ - INFO - Multi-Agent System stopped
+2025-06-27 18:25:14,377 - __main__ - INFO - Multi-Agent System shutdown complete
+2025-06-27 18:25:14,377 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-06-27 18:25:19,830 - __main__ - INFO - Starting Multi-Agent Product Scraper API...
+2025-06-27 18:25:19,830 - __main__ - INFO - Initializing Multi-Agent System...
+2025-06-27 18:25:19,830 - __main__ - INFO - Agent extractor_001 started
+2025-06-27 18:25:19,831 - __main__ - INFO - Agent formatter_001 started
+2025-06-27 18:25:19,831 - __main__ - INFO - Agent display_001 started
+2025-06-27 18:25:19,831 - __main__ - INFO - All agents initialized and started
+2025-06-27 18:25:19,832 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-27 18:25:19,834 - apscheduler.scheduler - INFO - Added job "MultiAgentSystem.setup_schedules.<locals>.<lambda>" to job store "default"
+2025-06-27 18:25:19,834 - apscheduler.scheduler - INFO - Scheduler started
+2025-06-27 18:25:19,834 - __main__ - INFO - Scheduled extraction job - 2 products every 30 seconds
+2025-06-27 18:25:19,835 - __main__ - INFO - Multi-Agent System is ready!
+2025-06-27 18:25:49,833 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 12:55:49 UTC)" (scheduled at 2025-06-27 12:55:49.832140+00:00)
+2025-06-27 18:25:49,836 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 12:56:19 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 565, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:26:19,834 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 12:56:49 UTC)" (scheduled at 2025-06-27 12:56:19.832140+00:00)
+2025-06-27 18:26:19,835 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 12:56:49 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 565, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:26:49,847 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 12:57:19 UTC)" (scheduled at 2025-06-27 12:56:49.832140+00:00)
+2025-06-27 18:26:49,847 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 12:57:19 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 565, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:27:19,859 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 12:57:49 UTC)" (scheduled at 2025-06-27 12:57:19.832140+00:00)
+2025-06-27 18:27:19,859 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 12:57:49 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 565, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:27:49,844 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 12:58:19 UTC)" (scheduled at 2025-06-27 12:57:49.832140+00:00)
+2025-06-27 18:27:49,845 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 12:58:19 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 565, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:28:19,840 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 12:58:49 UTC)" (scheduled at 2025-06-27 12:58:19.832140+00:00)
+2025-06-27 18:28:19,840 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 12:58:49 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 565, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:28:49,833 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 12:59:19 UTC)" (scheduled at 2025-06-27 12:58:49.832140+00:00)
+2025-06-27 18:28:49,833 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 12:59:19 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 565, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:29:19,840 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 12:59:49 UTC)" (scheduled at 2025-06-27 12:59:19.832140+00:00)
+2025-06-27 18:29:19,841 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 12:59:49 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 565, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:29:49,847 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:00:19 UTC)" (scheduled at 2025-06-27 12:59:49.832140+00:00)
+2025-06-27 18:29:49,847 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:00:19 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 565, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:30:19,839 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:00:49 UTC)" (scheduled at 2025-06-27 13:00:19.832140+00:00)
+2025-06-27 18:30:19,840 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:00:49 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 565, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:30:49,840 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:01:19 UTC)" (scheduled at 2025-06-27 13:00:49.832140+00:00)
+2025-06-27 18:30:49,842 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:01:19 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 565, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:31:19,832 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:01:49 UTC)" (scheduled at 2025-06-27 13:01:19.832140+00:00)
+2025-06-27 18:31:19,833 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:01:49 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 565, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:31:49,843 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:02:19 UTC)" (scheduled at 2025-06-27 13:01:49.832140+00:00)
+2025-06-27 18:31:49,844 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:02:19 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 565, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:32:19,843 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:02:49 UTC)" (scheduled at 2025-06-27 13:02:19.832140+00:00)
+2025-06-27 18:32:19,843 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:02:49 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 565, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:32:49,832 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:03:19 UTC)" (scheduled at 2025-06-27 13:02:49.832140+00:00)
+2025-06-27 18:32:49,833 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:03:19 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 565, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:33:19,860 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:03:49 UTC)" (scheduled at 2025-06-27 13:03:19.832140+00:00)
+2025-06-27 18:33:19,861 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:03:49 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 565, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:33:49,844 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:04:19 UTC)" (scheduled at 2025-06-27 13:03:49.832140+00:00)
+2025-06-27 18:33:49,845 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:04:19 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 565, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:34:19,832 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:04:49 UTC)" (scheduled at 2025-06-27 13:04:19.832140+00:00)
+2025-06-27 18:34:19,833 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:04:49 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 565, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:34:49,860 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:05:19 UTC)" (scheduled at 2025-06-27 13:04:49.832140+00:00)
+2025-06-27 18:34:49,860 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:05:19 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 565, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:35:19,837 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:05:49 UTC)" (scheduled at 2025-06-27 13:05:19.832140+00:00)
+2025-06-27 18:35:19,837 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:05:49 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 565, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:35:49,842 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:06:19 UTC)" (scheduled at 2025-06-27 13:05:49.832140+00:00)
+2025-06-27 18:35:49,842 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:06:19 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 565, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:36:19,835 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:06:49 UTC)" (scheduled at 2025-06-27 13:06:19.832140+00:00)
+2025-06-27 18:36:19,836 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:06:49 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 565, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:36:42,349 - __main__ - INFO - Stopping Multi-Agent System...
+2025-06-27 18:36:42,350 - __main__ - INFO - Agent extractor_001 stopped
+2025-06-27 18:36:42,350 - __main__ - INFO - Agent formatter_001 stopped
+2025-06-27 18:36:42,350 - __main__ - INFO - Agent display_001 stopped
+2025-06-27 18:36:42,350 - __main__ - INFO - Multi-Agent System stopped
+2025-06-27 18:36:42,351 - __main__ - INFO - Multi-Agent System shutdown complete
+2025-06-27 18:36:42,351 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-06-27 18:36:45,544 - __main__ - INFO - Starting Multi-Agent Product Scraper API...
+2025-06-27 18:36:45,547 - __main__ - INFO - Initializing Multi-Agent System...
+2025-06-27 18:36:45,547 - __main__ - INFO - Agent extractor_001 started
+2025-06-27 18:36:45,547 - __main__ - INFO - Agent formatter_001 started
+2025-06-27 18:36:45,548 - __main__ - INFO - Agent display_001 started
+2025-06-27 18:36:45,548 - __main__ - INFO - All agents initialized and started
+2025-06-27 18:36:45,549 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-27 18:36:45,551 - apscheduler.scheduler - INFO - Added job "MultiAgentSystem.setup_schedules.<locals>.<lambda>" to job store "default"
+2025-06-27 18:36:45,551 - apscheduler.scheduler - INFO - Scheduler started
+2025-06-27 18:36:45,552 - __main__ - INFO - Scheduled extraction job - 2 products every 30 seconds
+2025-06-27 18:36:45,553 - __main__ - INFO - Multi-Agent System is ready!
+2025-06-27 18:37:15,562 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:07:15 UTC)" (scheduled at 2025-06-27 13:07:15.549375+00:00)
+2025-06-27 18:37:15,564 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:07:45 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 604, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:37:45,561 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:08:15 UTC)" (scheduled at 2025-06-27 13:07:45.549375+00:00)
+2025-06-27 18:37:45,561 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:08:15 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 604, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:38:15,559 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:08:45 UTC)" (scheduled at 2025-06-27 13:08:15.549375+00:00)
+2025-06-27 18:38:15,560 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:08:45 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 604, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:38:45,550 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:09:15 UTC)" (scheduled at 2025-06-27 13:08:45.549375+00:00)
+2025-06-27 18:38:45,550 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:09:15 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 604, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:39:15,576 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:09:45 UTC)" (scheduled at 2025-06-27 13:09:15.549375+00:00)
+2025-06-27 18:39:15,576 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:09:45 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 604, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:39:45,553 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:10:15 UTC)" (scheduled at 2025-06-27 13:09:45.549375+00:00)
+2025-06-27 18:39:45,553 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:10:15 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 604, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:40:15,565 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:10:45 UTC)" (scheduled at 2025-06-27 13:10:15.549375+00:00)
+2025-06-27 18:40:15,566 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:10:45 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 604, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:40:45,576 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:11:15 UTC)" (scheduled at 2025-06-27 13:10:45.549375+00:00)
+2025-06-27 18:40:45,577 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:11:15 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 604, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:41:15,558 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:11:45 UTC)" (scheduled at 2025-06-27 13:11:15.549375+00:00)
+2025-06-27 18:41:15,558 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:11:45 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 604, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:41:45,561 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:12:15 UTC)" (scheduled at 2025-06-27 13:11:45.549375+00:00)
+2025-06-27 18:41:45,562 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:12:15 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 604, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:42:15,562 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:12:45 UTC)" (scheduled at 2025-06-27 13:12:15.549375+00:00)
+2025-06-27 18:42:15,563 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:12:45 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 604, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:42:45,555 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:13:15 UTC)" (scheduled at 2025-06-27 13:12:45.549375+00:00)
+2025-06-27 18:42:45,556 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:13:15 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 604, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:43:15,564 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:13:45 UTC)" (scheduled at 2025-06-27 13:13:15.549375+00:00)
+2025-06-27 18:43:15,565 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:13:45 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 604, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:43:45,561 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:14:15 UTC)" (scheduled at 2025-06-27 13:13:45.549375+00:00)
+2025-06-27 18:43:45,561 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:14:15 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 604, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:44:15,553 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:14:45 UTC)" (scheduled at 2025-06-27 13:14:15.549375+00:00)
+2025-06-27 18:44:15,553 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:14:45 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 604, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:44:45,562 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:15:15 UTC)" (scheduled at 2025-06-27 13:14:45.549375+00:00)
+2025-06-27 18:44:45,563 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:15:15 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 604, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:45:15,556 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:15:45 UTC)" (scheduled at 2025-06-27 13:15:15.549375+00:00)
+2025-06-27 18:45:15,556 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:15:45 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 604, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:45:45,552 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:16:15 UTC)" (scheduled at 2025-06-27 13:15:45.549375+00:00)
+2025-06-27 18:45:45,552 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:16:15 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 604, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:46:15,559 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:16:45 UTC)" (scheduled at 2025-06-27 13:16:15.549375+00:00)
+2025-06-27 18:46:15,559 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:16:45 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 604, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:46:45,551 - apscheduler.executors.default - INFO - Running job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:17:15 UTC)" (scheduled at 2025-06-27 13:16:45.549375+00:00)
+2025-06-27 18:46:45,551 - apscheduler.executors.default - ERROR - Job "MultiAgentSystem.setup_schedules.<locals>.<lambda> (trigger: interval[0:00:30], next run at: 2025-06-27 13:17:15 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main2.py", line 604, in <lambda>
+    func=lambda: asyncio.create_task(self.agents["extractor_001"].scheduled_fetch()),
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 360, in create_task
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+2025-06-27 18:47:01,167 - __main__ - INFO - Stopping Multi-Agent System...
+2025-06-27 18:47:01,167 - __main__ - INFO - Agent extractor_001 stopped
+2025-06-27 18:47:01,167 - __main__ - INFO - Agent formatter_001 stopped
+2025-06-27 18:47:01,167 - __main__ - INFO - Agent display_001 stopped
+2025-06-27 18:47:01,168 - __main__ - INFO - Multi-Agent System stopped
+2025-06-27 18:47:01,168 - __main__ - INFO - Multi-Agent System shutdown complete
+2025-06-27 18:47:01,168 - apscheduler.scheduler - INFO - Scheduler has been shut down

@@ -1,0 +1,401 @@
+2025-06-27 17:23:42,203 - __main__ - INFO - Registered agent: processor_001
+2025-06-27 17:23:42,203 - __main__ - INFO - Registered agent: analyzer_001
+2025-06-27 17:23:42,203 - __main__ - INFO - Registered agent: notifier_001
+2025-06-27 17:23:42,203 - __main__ - INFO - Added agent processor_001 to scheduler
+2025-06-27 17:23:42,203 - __main__ - INFO - Added agent analyzer_001 to scheduler
+2025-06-27 17:23:42,203 - __main__ - INFO - Added agent notifier_001 to scheduler
+2025-06-27 17:23:42,203 - __main__ - INFO - Agent processor_001 (data_processor) started
+2025-06-27 17:23:42,203 - __main__ - INFO - Agent analyzer_001 (analyzer) started
+2025-06-27 17:23:42,204 - __main__ - INFO - Agent notifier_001 (notifier) started
+2025-06-27 17:23:42,208 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-27 17:23:42,211 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-27 17:23:42,213 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-27 17:23:42,222 - apscheduler.scheduler - INFO - Added job "DataProcessorAgent.scheduled_data_fetch" to job store "default"
+2025-06-27 17:23:42,222 - apscheduler.scheduler - INFO - Added job "AnalyzerAgent.scheduled_analysis_report" to job store "default"
+2025-06-27 17:23:42,222 - apscheduler.scheduler - INFO - Added job "NotifierAgent.scheduled_health_check" to job store "default"
+2025-06-27 17:23:42,222 - apscheduler.scheduler - INFO - Scheduler started
+2025-06-27 17:23:47,246 - __main__ - INFO - Processing data batch with 5 records
+2025-06-27 17:23:48,245 - __main__ - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:24:12,221 - apscheduler.executors.default - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:30], next run at: 2025-06-27 17:24:42 IST)" (scheduled at 2025-06-27 17:24:12.208366+05:30)
+2025-06-27 17:24:12,224 - __main__ - INFO - Processing data batch with 5 records
+2025-06-27 17:24:13,230 - __main__ - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:24:13,230 - apscheduler.executors.default - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:30], next run at: 2025-06-27 17:24:42 IST)" executed successfully
+2025-06-27 17:24:27,224 - apscheduler.executors.default - INFO - Running job "AnalyzerAgent.scheduled_analysis_report (trigger: interval[0:00:45], next run at: 2025-06-27 17:25:12 IST)" (scheduled at 2025-06-27 17:24:27.210420+05:30)
+2025-06-27 17:24:27,227 - __main__ - INFO - Broadcast message sent by analyzer_001 to 2 agents
+2025-06-27 17:24:27,228 - apscheduler.executors.default - INFO - Job "AnalyzerAgent.scheduled_analysis_report (trigger: interval[0:00:45], next run at: 2025-06-27 17:25:12 IST)" executed successfully
+2025-06-27 17:24:42,217 - apscheduler.executors.default - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:30], next run at: 2025-06-27 17:25:12 IST)" (scheduled at 2025-06-27 17:24:42.208366+05:30)
+2025-06-27 17:24:42,219 - __main__ - INFO - Processing data batch with 5 records
+2025-06-27 17:24:42,220 - apscheduler.executors.default - INFO - Running job "NotifierAgent.scheduled_health_check (trigger: interval[0:01:00], next run at: 2025-06-27 17:25:42 IST)" (scheduled at 2025-06-27 17:24:42.213427+05:30)
+2025-06-27 17:24:42,222 - __main__ - INFO - Broadcast message sent by notifier_001 to 2 agents
+2025-06-27 17:24:42,222 - __main__ - INFO - Broadcast message sent by notifier_001 to 2 agents
+2025-06-27 17:24:42,222 - apscheduler.executors.default - INFO - Job "NotifierAgent.scheduled_health_check (trigger: interval[0:01:00], next run at: 2025-06-27 17:25:42 IST)" executed successfully
+2025-06-27 17:24:42,342 - __main__ - INFO - Broadcast message sent by processor_001 to 2 agents
+2025-06-27 17:24:42,342 - __main__ - INFO - Broadcast message sent by analyzer_001 to 2 agents
+2025-06-27 17:24:43,218 - __main__ - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:24:43,218 - apscheduler.executors.default - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:30], next run at: 2025-06-27 17:25:12 IST)" executed successfully
+2025-06-27 17:25:12,212 - apscheduler.executors.default - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:30], next run at: 2025-06-27 17:25:42 IST)" (scheduled at 2025-06-27 17:25:12.208366+05:30)
+2025-06-27 17:25:12,214 - __main__ - INFO - Processing data batch with 5 records
+2025-06-27 17:25:12,215 - apscheduler.executors.default - INFO - Running job "AnalyzerAgent.scheduled_analysis_report (trigger: interval[0:00:45], next run at: 2025-06-27 17:25:57 IST)" (scheduled at 2025-06-27 17:25:12.210420+05:30)
+2025-06-27 17:25:12,217 - __main__ - INFO - Broadcast message sent by analyzer_001 to 2 agents
+2025-06-27 17:25:12,217 - apscheduler.executors.default - INFO - Job "AnalyzerAgent.scheduled_analysis_report (trigger: interval[0:00:45], next run at: 2025-06-27 17:25:57 IST)" executed successfully
+2025-06-27 17:25:13,193 - __main__ - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:25:13,194 - apscheduler.executors.default - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:30], next run at: 2025-06-27 17:25:42 IST)" executed successfully
+2025-06-27 17:25:42,215 - apscheduler.executors.default - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:30], next run at: 2025-06-27 17:26:12 IST)" (scheduled at 2025-06-27 17:25:42.208366+05:30)
+2025-06-27 17:25:42,217 - __main__ - INFO - Processing data batch with 5 records
+2025-06-27 17:25:42,217 - apscheduler.executors.default - INFO - Running job "NotifierAgent.scheduled_health_check (trigger: interval[0:01:00], next run at: 2025-06-27 17:26:42 IST)" (scheduled at 2025-06-27 17:25:42.213427+05:30)
+2025-06-27 17:25:42,219 - __main__ - INFO - Broadcast message sent by notifier_001 to 2 agents
+2025-06-27 17:25:42,219 - __main__ - INFO - Broadcast message sent by notifier_001 to 2 agents
+2025-06-27 17:25:42,219 - apscheduler.executors.default - INFO - Job "NotifierAgent.scheduled_health_check (trigger: interval[0:01:00], next run at: 2025-06-27 17:26:42 IST)" executed successfully
+2025-06-27 17:25:42,418 - __main__ - INFO - Broadcast message sent by processor_001 to 2 agents
+2025-06-27 17:25:42,418 - __main__ - INFO - Broadcast message sent by analyzer_001 to 2 agents
+2025-06-27 17:25:43,212 - __main__ - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:25:43,212 - apscheduler.executors.default - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:30], next run at: 2025-06-27 17:26:12 IST)" executed successfully
+2025-06-27 17:25:45,301 - __main__ - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 17:25:57,219 - apscheduler.executors.default - INFO - Running job "AnalyzerAgent.scheduled_analysis_report (trigger: interval[0:00:45], next run at: 2025-06-27 17:26:42 IST)" (scheduled at 2025-06-27 17:25:57.210420+05:30)
+2025-06-27 17:25:57,221 - __main__ - INFO - Broadcast message sent by analyzer_001 to 2 agents
+2025-06-27 17:25:57,223 - apscheduler.executors.default - INFO - Job "AnalyzerAgent.scheduled_analysis_report (trigger: interval[0:00:45], next run at: 2025-06-27 17:26:42 IST)" executed successfully
+2025-06-27 17:26:12,223 - apscheduler.executors.default - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:30], next run at: 2025-06-27 17:26:42 IST)" (scheduled at 2025-06-27 17:26:12.208366+05:30)
+2025-06-27 17:26:12,226 - __main__ - INFO - Processing data batch with 5 records
+2025-06-27 17:26:13,249 - __main__ - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:26:13,249 - apscheduler.executors.default - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:30], next run at: 2025-06-27 17:26:42 IST)" executed successfully
+2025-06-27 17:26:15,306 - __main__ - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 17:26:42,227 - apscheduler.executors.default - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:30], next run at: 2025-06-27 17:27:12 IST)" (scheduled at 2025-06-27 17:26:42.208366+05:30)
+2025-06-27 17:26:42,229 - __main__ - INFO - Processing data batch with 5 records
+2025-06-27 17:26:42,229 - apscheduler.executors.default - INFO - Running job "AnalyzerAgent.scheduled_analysis_report (trigger: interval[0:00:45], next run at: 2025-06-27 17:27:27 IST)" (scheduled at 2025-06-27 17:26:42.210420+05:30)
+2025-06-27 17:26:42,232 - __main__ - INFO - Broadcast message sent by analyzer_001 to 2 agents
+2025-06-27 17:26:42,232 - apscheduler.executors.default - INFO - Job "AnalyzerAgent.scheduled_analysis_report (trigger: interval[0:00:45], next run at: 2025-06-27 17:27:27 IST)" executed successfully
+2025-06-27 17:26:42,232 - apscheduler.executors.default - INFO - Running job "NotifierAgent.scheduled_health_check (trigger: interval[0:01:00], next run at: 2025-06-27 17:27:42 IST)" (scheduled at 2025-06-27 17:26:42.213427+05:30)
+2025-06-27 17:26:42,234 - __main__ - INFO - Broadcast message sent by notifier_001 to 2 agents
+2025-06-27 17:26:42,234 - __main__ - INFO - Broadcast message sent by notifier_001 to 2 agents
+2025-06-27 17:26:42,235 - apscheduler.executors.default - INFO - Job "NotifierAgent.scheduled_health_check (trigger: interval[0:01:00], next run at: 2025-06-27 17:27:42 IST)" executed successfully
+2025-06-27 17:26:42,335 - __main__ - INFO - Broadcast message sent by analyzer_001 to 2 agents
+2025-06-27 17:26:42,444 - __main__ - INFO - Broadcast message sent by processor_001 to 2 agents
+2025-06-27 17:26:43,235 - __main__ - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:26:43,235 - apscheduler.executors.default - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:30], next run at: 2025-06-27 17:27:12 IST)" executed successfully
+2025-06-27 17:26:45,234 - __main__ - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 17:27:12,214 - apscheduler.executors.default - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:30], next run at: 2025-06-27 17:27:42 IST)" (scheduled at 2025-06-27 17:27:12.208366+05:30)
+2025-06-27 17:27:12,216 - __main__ - INFO - Processing data batch with 5 records
+2025-06-27 17:27:13,192 - __main__ - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:27:13,192 - apscheduler.executors.default - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:30], next run at: 2025-06-27 17:27:42 IST)" executed successfully
+2025-06-27 17:27:15,216 - __main__ - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 17:27:27,220 - apscheduler.executors.default - INFO - Running job "AnalyzerAgent.scheduled_analysis_report (trigger: interval[0:00:45], next run at: 2025-06-27 17:28:12 IST)" (scheduled at 2025-06-27 17:27:27.210420+05:30)
+2025-06-27 17:27:27,223 - __main__ - INFO - Broadcast message sent by analyzer_001 to 2 agents
+2025-06-27 17:27:27,223 - apscheduler.executors.default - INFO - Job "AnalyzerAgent.scheduled_analysis_report (trigger: interval[0:00:45], next run at: 2025-06-27 17:28:12 IST)" executed successfully
+2025-06-27 17:27:42,212 - apscheduler.executors.default - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:30], next run at: 2025-06-27 17:28:12 IST)" (scheduled at 2025-06-27 17:27:42.208366+05:30)
+2025-06-27 17:27:42,214 - __main__ - INFO - Processing data batch with 5 records
+2025-06-27 17:27:42,215 - apscheduler.executors.default - INFO - Running job "NotifierAgent.scheduled_health_check (trigger: interval[0:01:00], next run at: 2025-06-27 17:28:42 IST)" (scheduled at 2025-06-27 17:27:42.213427+05:30)
+2025-06-27 17:27:42,218 - __main__ - INFO - Broadcast message sent by notifier_001 to 2 agents
+2025-06-27 17:27:42,218 - __main__ - INFO - Broadcast message sent by notifier_001 to 2 agents
+2025-06-27 17:27:42,218 - apscheduler.executors.default - INFO - Job "NotifierAgent.scheduled_health_check (trigger: interval[0:01:00], next run at: 2025-06-27 17:28:42 IST)" executed successfully
+2025-06-27 17:27:42,321 - __main__ - INFO - Broadcast message sent by processor_001 to 2 agents
+2025-06-27 17:27:42,321 - __main__ - INFO - Broadcast message sent by analyzer_001 to 2 agents
+2025-06-27 17:27:43,220 - __main__ - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:27:43,220 - apscheduler.executors.default - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:30], next run at: 2025-06-27 17:28:12 IST)" executed successfully
+2025-06-27 17:27:45,244 - __main__ - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 17:28:12,215 - apscheduler.executors.default - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:30], next run at: 2025-06-27 17:28:42 IST)" (scheduled at 2025-06-27 17:28:12.208366+05:30)
+2025-06-27 17:28:12,218 - __main__ - INFO - Processing data batch with 5 records
+2025-06-27 17:28:12,218 - apscheduler.executors.default - INFO - Running job "AnalyzerAgent.scheduled_analysis_report (trigger: interval[0:00:45], next run at: 2025-06-27 17:28:57 IST)" (scheduled at 2025-06-27 17:28:12.210420+05:30)
+2025-06-27 17:28:12,220 - __main__ - INFO - Broadcast message sent by analyzer_001 to 2 agents
+2025-06-27 17:28:12,220 - apscheduler.executors.default - INFO - Job "AnalyzerAgent.scheduled_analysis_report (trigger: interval[0:00:45], next run at: 2025-06-27 17:28:57 IST)" executed successfully
+2025-06-27 17:28:13,216 - __main__ - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:28:13,216 - apscheduler.executors.default - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:30], next run at: 2025-06-27 17:28:42 IST)" executed successfully
+2025-06-27 17:28:15,214 - __main__ - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 17:28:42,219 - apscheduler.executors.default - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:30], next run at: 2025-06-27 17:29:12 IST)" (scheduled at 2025-06-27 17:28:42.208366+05:30)
+2025-06-27 17:28:42,222 - __main__ - INFO - Processing data batch with 5 records
+2025-06-27 17:28:42,222 - apscheduler.executors.default - INFO - Running job "NotifierAgent.scheduled_health_check (trigger: interval[0:01:00], next run at: 2025-06-27 17:29:42 IST)" (scheduled at 2025-06-27 17:28:42.213427+05:30)
+2025-06-27 17:28:42,225 - __main__ - INFO - Broadcast message sent by notifier_001 to 2 agents
+2025-06-27 17:28:42,225 - __main__ - INFO - Broadcast message sent by notifier_001 to 2 agents
+2025-06-27 17:28:42,225 - apscheduler.executors.default - INFO - Job "NotifierAgent.scheduled_health_check (trigger: interval[0:01:00], next run at: 2025-06-27 17:29:42 IST)" executed successfully
+2025-06-27 17:28:42,345 - __main__ - INFO - Broadcast message sent by processor_001 to 2 agents
+2025-06-27 17:28:42,392 - __main__ - INFO - Broadcast message sent by analyzer_001 to 2 agents
+2025-06-27 17:28:43,240 - __main__ - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:28:43,241 - apscheduler.executors.default - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:30], next run at: 2025-06-27 17:29:12 IST)" executed successfully
+2025-06-27 17:28:57,215 - apscheduler.executors.default - INFO - Running job "AnalyzerAgent.scheduled_analysis_report (trigger: interval[0:00:45], next run at: 2025-06-27 17:29:42 IST)" (scheduled at 2025-06-27 17:28:57.210420+05:30)
+2025-06-27 17:28:57,219 - __main__ - INFO - Broadcast message sent by analyzer_001 to 2 agents
+2025-06-27 17:28:57,219 - apscheduler.executors.default - INFO - Job "AnalyzerAgent.scheduled_analysis_report (trigger: interval[0:00:45], next run at: 2025-06-27 17:29:42 IST)" executed successfully
+2025-06-27 17:29:12,209 - apscheduler.executors.default - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:30], next run at: 2025-06-27 17:29:42 IST)" (scheduled at 2025-06-27 17:29:12.208366+05:30)
+2025-06-27 17:29:12,212 - __main__ - INFO - Processing data batch with 5 records
+2025-06-27 17:29:13,224 - __main__ - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:29:13,224 - apscheduler.executors.default - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:30], next run at: 2025-06-27 17:29:42 IST)" executed successfully
+2025-06-27 17:29:42,222 - apscheduler.executors.default - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:30], next run at: 2025-06-27 17:30:12 IST)" (scheduled at 2025-06-27 17:29:42.208366+05:30)
+2025-06-27 17:29:42,226 - __main__ - INFO - Processing data batch with 5 records
+2025-06-27 17:29:42,226 - apscheduler.executors.default - INFO - Running job "AnalyzerAgent.scheduled_analysis_report (trigger: interval[0:00:45], next run at: 2025-06-27 17:30:27 IST)" (scheduled at 2025-06-27 17:29:42.210420+05:30)
+2025-06-27 17:29:42,230 - __main__ - INFO - Broadcast message sent by analyzer_001 to 2 agents
+2025-06-27 17:29:42,230 - apscheduler.executors.default - INFO - Job "AnalyzerAgent.scheduled_analysis_report (trigger: interval[0:00:45], next run at: 2025-06-27 17:30:27 IST)" executed successfully
+2025-06-27 17:29:42,230 - apscheduler.executors.default - INFO - Running job "NotifierAgent.scheduled_health_check (trigger: interval[0:01:00], next run at: 2025-06-27 17:30:42 IST)" (scheduled at 2025-06-27 17:29:42.213427+05:30)
+2025-06-27 17:29:42,233 - __main__ - INFO - Broadcast message sent by notifier_001 to 2 agents
+2025-06-27 17:29:42,233 - __main__ - INFO - Broadcast message sent by notifier_001 to 2 agents
+2025-06-27 17:29:42,234 - apscheduler.executors.default - INFO - Job "NotifierAgent.scheduled_health_check (trigger: interval[0:01:00], next run at: 2025-06-27 17:30:42 IST)" executed successfully
+2025-06-27 17:29:42,348 - __main__ - INFO - Broadcast message sent by analyzer_001 to 2 agents
+2025-06-27 17:29:42,458 - __main__ - INFO - Broadcast message sent by processor_001 to 2 agents
+2025-06-27 17:29:43,225 - __main__ - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:29:43,225 - apscheduler.executors.default - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:30], next run at: 2025-06-27 17:30:12 IST)" executed successfully
+2025-06-27 17:29:52,843 - __main__ - INFO - Unregistered agent: processor_001
+2025-06-27 17:29:52,843 - __main__ - INFO - Agent processor_001 stopped
+2025-06-27 17:29:52,843 - __main__ - INFO - Unregistered agent: analyzer_001
+2025-06-27 17:29:52,843 - __main__ - INFO - Agent analyzer_001 stopped
+2025-06-27 17:29:52,844 - __main__ - INFO - Unregistered agent: notifier_001
+2025-06-27 17:29:52,844 - __main__ - INFO - Agent notifier_001 stopped
+2025-06-27 17:29:52,846 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-06-27 17:30:55,397 - __main__ - INFO - Starting Multi-Agent Scheduler System...
+2025-06-27 17:30:55,398 - __main__ - INFO - Registered agent: processor_001
+2025-06-27 17:30:55,398 - __main__ - INFO - Registered agent: analyzer_001
+2025-06-27 17:30:55,398 - __main__ - INFO - Registered agent: notifier_001
+2025-06-27 17:30:55,398 - __main__ - INFO - Added agent processor_001 to scheduler
+2025-06-27 17:30:55,398 - __main__ - INFO - Added agent analyzer_001 to scheduler
+2025-06-27 17:30:55,398 - __main__ - INFO - Added agent notifier_001 to scheduler
+2025-06-27 17:30:55,398 - __main__ - INFO - Agent processor_001 (data_processor) started
+2025-06-27 17:30:55,398 - __main__ - INFO - Agent analyzer_001 (analyzer) started
+2025-06-27 17:30:55,398 - __main__ - INFO - Agent notifier_001 (notifier) started
+2025-06-27 17:30:55,399 - __main__ - INFO - Initialized 3 agents
+2025-06-27 17:30:55,399 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-27 17:30:55,399 - __main__ - INFO - Scheduled interval task scheduled_data_fetch for processor_001 every 30 seconds
+2025-06-27 17:30:55,400 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-27 17:30:55,400 - __main__ - INFO - Scheduled interval task scheduled_analysis_report for analyzer_001 every 45 seconds
+2025-06-27 17:30:55,400 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-27 17:30:55,400 - __main__ - INFO - Scheduled interval task scheduled_health_check for notifier_001 every 60 seconds
+2025-06-27 17:30:55,400 - __main__ - INFO - Scheduled tasks configured
+2025-06-27 17:30:55,402 - apscheduler.scheduler - INFO - Added job "DataProcessorAgent.scheduled_data_fetch" to job store "default"
+2025-06-27 17:30:55,402 - apscheduler.scheduler - INFO - Added job "AnalyzerAgent.scheduled_analysis_report" to job store "default"
+2025-06-27 17:30:55,402 - apscheduler.scheduler - INFO - Added job "NotifierAgent.scheduled_health_check" to job store "default"
+2025-06-27 17:30:55,403 - apscheduler.scheduler - INFO - Scheduler started
+2025-06-27 17:30:55,403 - __main__ - INFO - Scheduler started
+2025-06-27 17:30:55,403 - __main__ - INFO - Multi-Agent Scheduler System started successfully!
+2025-06-27 17:30:55,403 - __main__ - INFO - System is running! Watch the scheduled tasks execute...
+2025-06-27 17:30:55,403 - __main__ - INFO - Agents will communicate with each other automatically
+2025-06-27 17:30:55,403 - __main__ - INFO - Data Processor runs every 30s, Analyzer every 45s, Notifier every 60s
+2025-06-27 17:30:55,403 - __main__ - INFO - API available at http://localhost:8000
+2025-06-27 17:30:55,404 - __main__ - INFO - Try: GET /agents, /scheduler/jobs, /messages/history
+2025-06-27 17:30:55,404 - __main__ - INFO - Manual triggers: POST /system/trigger/{agent_id}/{method}
+2025-06-27 17:31:00,408 - __main__ - INFO - Triggering initial data processing...
+2025-06-27 17:31:00,408 - __main__ - INFO - Agent processor_001: Running scheduled data fetch #1
+2025-06-27 17:31:00,409 - __main__ - INFO - Processing data batch with 5 records
+2025-06-27 17:31:01,395 - __main__ - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:31:01,505 - __main__ - INFO - Analyzing processed data from batch 5 records
+2025-06-27 17:31:16,418 - __main__ - INFO - System active - 1 total messages exchanged
+2025-06-27 17:31:25,414 - apscheduler.executors.default - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:30], next run at: 2025-06-27 17:31:55 IST)" (scheduled at 2025-06-27 17:31:25.399931+05:30)
+2025-06-27 17:31:25,414 - __main__ - INFO - Agent processor_001: Running scheduled data fetch #1
+2025-06-27 17:31:25,415 - __main__ - INFO - Processing data batch with 5 records
+2025-06-27 17:31:26,412 - __main__ - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:31:26,412 - apscheduler.executors.default - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:30], next run at: 2025-06-27 17:31:55 IST)" executed successfully
+2025-06-27 17:31:26,490 - __main__ - INFO - Analyzing processed data from batch 5 records
+2025-06-27 17:31:31,397 - __main__ - INFO - System active - 2 total messages exchanged
+2025-06-27 17:31:34,714 - __main__ - INFO - Stopping Multi-Agent Scheduler System...
+2025-06-27 17:31:34,714 - __main__ - INFO - Scheduler stopped
+2025-06-27 17:31:34,714 - __main__ - INFO - Unregistered agent: processor_001
+2025-06-27 17:31:34,714 - __main__ - INFO - Agent processor_001 stopped
+2025-06-27 17:31:34,715 - __main__ - INFO - Unregistered agent: analyzer_001
+2025-06-27 17:31:34,715 - __main__ - INFO - Agent analyzer_001 stopped
+2025-06-27 17:31:34,715 - __main__ - INFO - Unregistered agent: notifier_001
+2025-06-27 17:31:34,715 - __main__ - INFO - Agent notifier_001 stopped
+2025-06-27 17:31:34,715 - __main__ - INFO - Multi-Agent System stopped successfully
+2025-06-27 17:31:34,715 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-06-27 17:33:39,864 - INFO - Starting Multi-Agent System...
+2025-06-27 17:33:39,864 - INFO - Registered agent: processor_001
+2025-06-27 17:33:39,865 - INFO - Registered agent: analyzer_001
+2025-06-27 17:33:39,865 - INFO - Registered agent: notifier_001
+2025-06-27 17:33:39,865 - INFO - Agent processor_001 (data_processor) started
+2025-06-27 17:33:39,865 - INFO - Agent analyzer_001 (analyzer) started
+2025-06-27 17:33:39,865 - INFO - Agent notifier_001 (notifier) started
+2025-06-27 17:33:39,866 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-27 17:33:39,866 - INFO - Scheduled data fetch every 10 seconds
+2025-06-27 17:33:39,868 - INFO - Added job "DataProcessorAgent.scheduled_data_fetch" to job store "default"
+2025-06-27 17:33:39,868 - INFO - Scheduler started
+2025-06-27 17:33:39,868 - INFO - System started
+2025-06-27 17:33:49,874 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:03:59 UTC)" (scheduled at 2025-06-27 12:03:49.866948+00:00)
+2025-06-27 17:33:49,875 - INFO - Agent processor_001: Running data fetch
+2025-06-27 17:33:49,875 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 17:33:50,872 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:33:50,872 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:03:59 UTC)" executed successfully
+2025-06-27 17:33:50,982 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 17:33:59,875 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:04:09 UTC)" (scheduled at 2025-06-27 12:03:59.866948+00:00)
+2025-06-27 17:33:59,875 - INFO - Agent processor_001: Running data fetch
+2025-06-27 17:33:59,875 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 17:34:00,883 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:34:00,883 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:04:09 UTC)" executed successfully
+2025-06-27 17:34:00,884 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 17:34:09,868 - INFO - Total messages exchanged: 2
+2025-06-27 17:34:09,869 - INFO - Stopping Multi-Agent System...
+2025-06-27 17:34:09,869 - INFO - Agent processor_001 stopped
+2025-06-27 17:34:09,869 - INFO - Agent analyzer_001 stopped
+2025-06-27 17:34:09,869 - INFO - Agent notifier_001 stopped
+2025-06-27 17:34:09,870 - INFO - System stopped
+2025-06-27 17:34:09,870 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:04:19 UTC)" (scheduled at 2025-06-27 12:04:09.866948+00:00)
+2025-06-27 17:34:09,870 - INFO - Agent processor_001: Running data fetch
+2025-06-27 17:34:09,870 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 17:34:09,870 - INFO - Scheduler has been shut down
+2025-06-27 17:34:09,872 - ERROR - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:04:19 UTC)" raised an exception
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main.py", line 129, in scheduled_data_fetch
+    await self.process_data(mock_data)
+  File "C:\Users\ASUS USER\OneDrive\Desktop\AI_Supervaisor\graph-based-research\main.py", line 116, in process_data
+    await asyncio.sleep(1)
+  File "C:\anaconda3\envs\multi-agent\lib\asyncio\tasks.py", line 652, in sleep
+    return await future
+asyncio.exceptions.CancelledError
+2025-06-27 17:35:36,230 - INFO - Starting Multi-Agent System...
+2025-06-27 17:35:36,230 - INFO - Registered agent: processor_001
+2025-06-27 17:35:36,230 - INFO - Registered agent: analyzer_001
+2025-06-27 17:35:36,231 - INFO - Registered agent: notifier_001
+2025-06-27 17:35:36,231 - INFO - Agent processor_001 (data_processor) started
+2025-06-27 17:35:36,231 - INFO - Agent analyzer_001 (analyzer) started
+2025-06-27 17:35:36,231 - INFO - Agent notifier_001 (notifier) started
+2025-06-27 17:35:36,233 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-27 17:35:36,233 - INFO - Scheduled data fetch every 10 seconds
+2025-06-27 17:35:36,235 - INFO - Added job "DataProcessorAgent.scheduled_data_fetch" to job store "default"
+2025-06-27 17:35:36,236 - INFO - Scheduler started
+2025-06-27 17:35:36,236 - INFO - System started
+2025-06-27 17:35:46,246 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:05:56 UTC)" (scheduled at 2025-06-27 12:05:46.233139+00:00)
+2025-06-27 17:35:46,247 - INFO - Agent processor_001: Running data fetch
+2025-06-27 17:35:46,247 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 17:35:47,252 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:35:47,252 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:05:56 UTC)" executed successfully
+2025-06-27 17:35:47,314 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 17:35:56,237 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:06:06 UTC)" (scheduled at 2025-06-27 12:05:56.233139+00:00)
+2025-06-27 17:35:56,238 - INFO - Agent processor_001: Running data fetch
+2025-06-27 17:35:56,238 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 17:35:57,263 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:35:57,263 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:06:06 UTC)" executed successfully
+2025-06-27 17:35:57,263 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 17:36:06,245 - INFO - Total messages exchanged: 2
+2025-06-27 17:36:06,246 - INFO - Stopping Multi-Agent System...
+2025-06-27 17:36:06,246 - INFO - Agent processor_001 stopped
+2025-06-27 17:36:06,246 - INFO - Agent analyzer_001 stopped
+2025-06-27 17:36:06,246 - INFO - Agent notifier_001 stopped
+2025-06-27 17:36:06,246 - INFO - System stopped
+2025-06-27 17:36:06,247 - INFO - Scheduler has been shut down
+2025-06-27 17:36:06,247 - ERROR - Error running job 857b966d16bb4f6fb4bcbb2b43d2d058
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\base_py3.py", line 13, in run_coroutine_job
+    async def run_coroutine_job(job, jobstore_alias, run_times, logger_name):
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\multi-agent\lib\site-packages\apscheduler\executors\asyncio.py", line 38, in callback
+    events = f.result()
+asyncio.exceptions.CancelledError
+2025-06-27 17:38:33,282 - INFO - Starting Multi-Agent System...
+2025-06-27 17:38:33,282 - INFO - Registered agent: processor_001
+2025-06-27 17:38:33,282 - INFO - Registered agent: analyzer_001
+2025-06-27 17:38:33,282 - INFO - Registered agent: notifier_001
+2025-06-27 17:38:33,282 - INFO - Agent processor_001 (data_processor) started
+2025-06-27 17:38:33,282 - INFO - Agent analyzer_001 (analyzer) started
+2025-06-27 17:38:33,282 - INFO - Agent notifier_001 (notifier) started
+2025-06-27 17:38:33,283 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-27 17:38:33,283 - INFO - Scheduled data fetch every 10 seconds
+2025-06-27 17:38:33,284 - INFO - Added job "DataProcessorAgent.scheduled_data_fetch" to job store "default"
+2025-06-27 17:38:33,285 - INFO - Scheduler started
+2025-06-27 17:38:33,285 - INFO - System started
+2025-06-27 17:38:33,285 - INFO - System running. Press Ctrl+C to stop...
+2025-06-27 17:38:43,297 - INFO - Total messages exchanged: 0
+2025-06-27 17:38:43,297 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:08:53 UTC)" (scheduled at 2025-06-27 12:08:43.283784+00:00)
+2025-06-27 17:38:43,297 - INFO - Agent processor_001: Running data fetch
+2025-06-27 17:38:43,298 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 17:38:44,272 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:38:44,273 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:08:53 UTC)" executed successfully
+2025-06-27 17:38:44,383 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 17:38:45,396 - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 17:38:45,473 - INFO - Agent notifier_001: Sending notification, confidence 86.0%
+2025-06-27 17:38:53,274 - INFO - Total messages exchanged: 2
+2025-06-27 17:38:53,290 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:09:03 UTC)" (scheduled at 2025-06-27 12:08:53.283784+00:00)
+2025-06-27 17:38:53,290 - INFO - Agent processor_001: Running data fetch
+2025-06-27 17:38:53,291 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 17:38:54,312 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:38:54,313 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:09:03 UTC)" executed successfully
+2025-06-27 17:38:54,313 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 17:38:55,322 - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 17:38:55,323 - INFO - Agent notifier_001: Sending notification, confidence 87.0%
+2025-06-27 17:39:03,288 - INFO - Total messages exchanged: 4
+2025-06-27 17:39:03,289 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:09:13 UTC)" (scheduled at 2025-06-27 12:09:03.283784+00:00)
+2025-06-27 17:39:03,289 - INFO - Agent processor_001: Running data fetch
+2025-06-27 17:39:03,289 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 17:39:04,313 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:39:04,313 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:09:13 UTC)" executed successfully
+2025-06-27 17:39:04,314 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 17:39:05,338 - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 17:39:05,400 - INFO - Agent notifier_001: Sending notification, confidence 88.0%
+2025-06-27 17:39:13,299 - INFO - Total messages exchanged: 6
+2025-06-27 17:39:13,299 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:09:23 UTC)" (scheduled at 2025-06-27 12:09:13.283784+00:00)
+2025-06-27 17:39:13,299 - INFO - Agent processor_001: Running data fetch
+2025-06-27 17:39:13,299 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 17:39:14,312 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:39:14,312 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:09:23 UTC)" executed successfully
+2025-06-27 17:39:14,391 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 17:39:15,405 - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 17:39:15,483 - INFO - Agent notifier_001: Sending notification, confidence 89.0%
+2025-06-27 17:39:23,307 - INFO - Total messages exchanged: 8
+2025-06-27 17:39:23,307 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:09:33 UTC)" (scheduled at 2025-06-27 12:09:23.283784+00:00)
+2025-06-27 17:39:23,307 - INFO - Agent processor_001: Running data fetch
+2025-06-27 17:39:23,307 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 17:39:24,320 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:39:24,320 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:09:33 UTC)" executed successfully
+2025-06-27 17:39:24,429 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 17:39:25,439 - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 17:39:25,439 - INFO - Agent notifier_001: Sending notification, confidence 90.0%
+2025-06-27 17:39:33,297 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:09:43 UTC)" (scheduled at 2025-06-27 12:09:33.283784+00:00)
+2025-06-27 17:39:33,298 - INFO - Agent processor_001: Running data fetch
+2025-06-27 17:39:33,298 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 17:39:33,299 - INFO - Total messages exchanged: 10
+2025-06-27 17:39:34,296 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:39:34,296 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:09:43 UTC)" executed successfully
+2025-06-27 17:39:34,296 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 17:39:35,311 - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 17:39:35,311 - INFO - Agent notifier_001: Sending notification, confidence 91.0%
+2025-06-27 17:39:37,144 - INFO - Stopping Multi-Agent System...
+2025-06-27 17:39:37,144 - INFO - Paused scheduler job processing
+2025-06-27 17:39:37,144 - INFO - Agent processor_001 stopped
+2025-06-27 17:39:37,144 - INFO - Agent analyzer_001 stopped
+2025-06-27 17:39:37,145 - INFO - Agent notifier_001 stopped
+2025-06-27 17:39:37,145 - INFO - System stopped
+2025-06-27 17:39:37,145 - INFO - Scheduler has been shut down
+2025-06-27 17:54:08,262 - INFO - Starting Multi-Agent System...
+2025-06-27 17:54:08,263 - INFO - Registered agent: processor_001
+2025-06-27 17:54:08,263 - INFO - Registered agent: analyzer_001
+2025-06-27 17:54:08,264 - INFO - Registered agent: notifier_001
+2025-06-27 17:54:08,264 - INFO - Agent processor_001 (data_processor) started
+2025-06-27 17:54:08,264 - INFO - Agent analyzer_001 (analyzer) started
+2025-06-27 17:54:08,264 - INFO - Agent notifier_001 (notifier) started
+2025-06-27 17:54:08,266 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-27 17:54:08,266 - INFO - Scheduled data fetch every 10 seconds
+2025-06-27 17:54:08,268 - INFO - Added job "DataProcessorAgent.scheduled_data_fetch" to job store "default"
+2025-06-27 17:54:08,268 - INFO - Scheduler started
+2025-06-27 17:54:08,268 - INFO - System started
+2025-06-27 17:54:08,268 - INFO - System running. Press Ctrl+C to stop...
+2025-06-27 17:54:18,276 - INFO - Total messages exchanged: 0
+2025-06-27 17:54:18,276 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:24:28 UTC)" (scheduled at 2025-06-27 12:24:18.266765+00:00)
+2025-06-27 17:54:18,276 - INFO - Agent processor_001: Running data fetch
+2025-06-27 17:54:18,276 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 17:54:19,291 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:54:19,291 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:24:28 UTC)" executed successfully
+2025-06-27 17:54:19,400 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 17:54:20,422 - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 17:54:20,485 - INFO - Agent notifier_001: Sending notification, confidence 86.0%
+2025-06-27 17:54:28,275 - INFO - Total messages exchanged: 2
+2025-06-27 17:54:28,276 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:24:38 UTC)" (scheduled at 2025-06-27 12:24:28.266765+00:00)
+2025-06-27 17:54:28,276 - INFO - Agent processor_001: Running data fetch
+2025-06-27 17:54:28,276 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 17:54:29,291 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:54:29,291 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:24:38 UTC)" executed successfully
+2025-06-27 17:54:29,292 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 17:54:30,301 - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 17:54:30,301 - INFO - Agent notifier_001: Sending notification, confidence 87.0%
+2025-06-27 17:54:38,269 - INFO - Total messages exchanged: 4
+2025-06-27 17:54:38,270 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:24:48 UTC)" (scheduled at 2025-06-27 12:24:38.266765+00:00)
+2025-06-27 17:54:38,270 - INFO - Agent processor_001: Running data fetch
+2025-06-27 17:54:38,270 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 17:54:39,296 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 17:54:39,296 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 12:24:48 UTC)" executed successfully
+2025-06-27 17:54:39,328 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 17:54:40,333 - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 17:54:40,409 - INFO - Agent notifier_001: Sending notification, confidence 88.0%
+2025-06-27 17:54:43,603 - INFO - Stopping Multi-Agent System...
+2025-06-27 17:54:43,604 - INFO - Paused scheduler job processing
+2025-06-27 17:54:43,604 - INFO - Agent processor_001 stopped
+2025-06-27 17:54:43,604 - INFO - Agent analyzer_001 stopped
+2025-06-27 17:54:43,604 - INFO - Agent notifier_001 stopped
+2025-06-27 17:54:43,604 - INFO - System stopped
+2025-06-27 17:54:43,605 - INFO - Scheduler has been shut down

@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+    networks:
+      - agent_network
+
+  multi-agent-system:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - LOG_LEVEL=INFO
+    volumes:
+      - ./logs:/app/logs
+    networks:
+      - agent_network
+
+volumes:
+  redis_data:
+
+networks:
+  agent_network:
+    driver: bridge
