@@ -399,3 +399,155 @@ asyncio.exceptions.CancelledError
 2025-06-27 17:54:43,604 - INFO - Agent notifier_001 stopped
 2025-06-27 17:54:43,604 - INFO - System stopped
 2025-06-27 17:54:43,605 - INFO - Scheduler has been shut down
+2025-06-27 13:23:33,369 - INFO - Starting Multi-Agent System...
+2025-06-27 13:23:33,370 - INFO - Registered agent: processor_001
+2025-06-27 13:23:33,370 - INFO - Registered agent: analyzer_001
+2025-06-27 13:23:33,370 - INFO - Registered agent: notifier_001
+2025-06-27 13:23:33,371 - INFO - Agent processor_001 (data_processor) started
+2025-06-27 13:23:33,372 - INFO - Agent analyzer_001 (analyzer) started
+2025-06-27 13:23:33,373 - INFO - Agent notifier_001 (notifier) started
+2025-06-27 13:23:33,375 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-27 13:23:33,376 - INFO - Scheduled data fetch every 10 seconds
+2025-06-27 13:23:33,377 - INFO - Added job "DataProcessorAgent.scheduled_data_fetch" to job store "default"
+2025-06-27 13:23:33,378 - INFO - Scheduler started
+2025-06-27 13:23:33,379 - INFO - System started
+2025-06-27 13:23:33,379 - INFO - System running. Press Ctrl+C to stop...
+2025-06-27 13:23:43,376 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:23:53 UTC)" (scheduled at 2025-06-27 13:23:43.375099+00:00)
+2025-06-27 13:23:43,378 - INFO - Agent processor_001: Running data fetch
+2025-06-27 13:23:43,381 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 13:23:43,383 - INFO - Total messages exchanged: 0
+2025-06-27 13:23:44,384 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 13:23:44,385 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:23:53 UTC)" executed successfully
+2025-06-27 13:23:44,434 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 13:23:45,436 - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 13:23:45,440 - INFO - Agent notifier_001: Sending notification, confidence 86.0%
+2025-06-27 13:23:53,377 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:24:03 UTC)" (scheduled at 2025-06-27 13:23:53.375099+00:00)
+2025-06-27 13:23:53,378 - INFO - Agent processor_001: Running data fetch
+2025-06-27 13:23:53,379 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 13:23:53,385 - INFO - Total messages exchanged: 2
+2025-06-27 13:23:54,381 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 13:23:54,381 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:24:03 UTC)" executed successfully
+2025-06-27 13:23:54,411 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 13:23:55,413 - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 13:23:55,418 - INFO - Agent notifier_001: Sending notification, confidence 87.0%
+2025-06-27 13:24:03,376 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:24:13 UTC)" (scheduled at 2025-06-27 13:24:03.375099+00:00)
+2025-06-27 13:24:03,378 - INFO - Agent processor_001: Running data fetch
+2025-06-27 13:24:03,379 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 13:24:03,389 - INFO - Total messages exchanged: 4
+2025-06-27 13:24:04,381 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 13:24:04,382 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:24:13 UTC)" executed successfully
+2025-06-27 13:24:04,389 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 13:24:05,391 - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 13:24:05,395 - INFO - Agent notifier_001: Sending notification, confidence 88.0%
+2025-06-27 13:24:13,375 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:24:23 UTC)" (scheduled at 2025-06-27 13:24:13.375099+00:00)
+2025-06-27 13:24:13,378 - INFO - Agent processor_001: Running data fetch
+2025-06-27 13:24:13,378 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 13:24:13,390 - INFO - Total messages exchanged: 6
+2025-06-27 13:24:14,380 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 13:24:14,381 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:24:23 UTC)" executed successfully
+2025-06-27 13:24:14,381 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 13:24:15,383 - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 13:24:15,383 - INFO - Agent notifier_001: Sending notification, confidence 89.0%
+2025-06-27 13:24:23,376 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:24:33 UTC)" (scheduled at 2025-06-27 13:24:23.375099+00:00)
+2025-06-27 13:24:23,377 - INFO - Agent processor_001: Running data fetch
+2025-06-27 13:24:23,378 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 13:24:23,392 - INFO - Total messages exchanged: 8
+2025-06-27 13:24:24,381 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 13:24:24,381 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:24:33 UTC)" executed successfully
+2025-06-27 13:24:24,382 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 13:24:25,384 - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 13:24:25,385 - INFO - Agent notifier_001: Sending notification, confidence 90.0%
+2025-06-27 13:24:33,376 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:24:43 UTC)" (scheduled at 2025-06-27 13:24:33.375099+00:00)
+2025-06-27 13:24:33,377 - INFO - Agent processor_001: Running data fetch
+2025-06-27 13:24:33,378 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 13:24:33,396 - INFO - Total messages exchanged: 10
+2025-06-27 13:24:34,380 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 13:24:34,381 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:24:43 UTC)" executed successfully
+2025-06-27 13:24:34,383 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 13:24:35,384 - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 13:24:35,385 - INFO - Agent notifier_001: Sending notification, confidence 91.0%
+2025-06-27 13:24:43,376 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:24:53 UTC)" (scheduled at 2025-06-27 13:24:43.375099+00:00)
+2025-06-27 13:24:43,378 - INFO - Agent processor_001: Running data fetch
+2025-06-27 13:24:43,378 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 13:24:43,396 - INFO - Total messages exchanged: 12
+2025-06-27 13:24:44,380 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 13:24:44,381 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:24:53 UTC)" executed successfully
+2025-06-27 13:24:44,381 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 13:24:45,383 - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 13:24:45,384 - INFO - Agent notifier_001: Sending notification, confidence 92.0%
+2025-06-27 13:24:53,376 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:25:03 UTC)" (scheduled at 2025-06-27 13:24:53.375099+00:00)
+2025-06-27 13:24:53,377 - INFO - Agent processor_001: Running data fetch
+2025-06-27 13:24:53,378 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 13:24:53,399 - INFO - Total messages exchanged: 14
+2025-06-27 13:24:54,380 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 13:24:54,380 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:25:03 UTC)" executed successfully
+2025-06-27 13:24:54,381 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 13:24:55,382 - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 13:24:55,383 - INFO - Agent notifier_001: Sending notification, confidence 93.0%
+2025-06-27 13:25:03,376 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:25:13 UTC)" (scheduled at 2025-06-27 13:25:03.375099+00:00)
+2025-06-27 13:25:03,379 - INFO - Agent processor_001: Running data fetch
+2025-06-27 13:25:03,380 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 13:25:03,401 - INFO - Total messages exchanged: 16
+2025-06-27 13:25:04,382 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 13:25:04,382 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:25:13 UTC)" executed successfully
+2025-06-27 13:25:04,383 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 13:25:05,385 - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 13:25:05,386 - INFO - Agent notifier_001: Sending notification, confidence 94.0%
+2025-06-27 13:25:13,376 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:25:23 UTC)" (scheduled at 2025-06-27 13:25:13.375099+00:00)
+2025-06-27 13:25:13,377 - INFO - Agent processor_001: Running data fetch
+2025-06-27 13:25:13,378 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 13:25:13,402 - INFO - Total messages exchanged: 18
+2025-06-27 13:25:14,380 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 13:25:14,380 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:25:23 UTC)" executed successfully
+2025-06-27 13:25:14,381 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 13:25:15,383 - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 13:25:15,383 - INFO - Agent notifier_001: Sending notification, confidence 85.0%
+2025-06-27 13:25:23,375 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:25:33 UTC)" (scheduled at 2025-06-27 13:25:23.375099+00:00)
+2025-06-27 13:25:23,376 - INFO - Agent processor_001: Running data fetch
+2025-06-27 13:25:23,377 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 13:25:23,403 - INFO - Total messages exchanged: 20
+2025-06-27 13:25:24,379 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 13:25:24,379 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:25:33 UTC)" executed successfully
+2025-06-27 13:25:24,380 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 13:25:25,383 - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 13:25:25,384 - INFO - Agent notifier_001: Sending notification, confidence 86.0%
+2025-06-27 13:25:33,376 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:25:43 UTC)" (scheduled at 2025-06-27 13:25:33.375099+00:00)
+2025-06-27 13:25:33,377 - INFO - Agent processor_001: Running data fetch
+2025-06-27 13:25:33,378 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 13:25:33,406 - INFO - Total messages exchanged: 22
+2025-06-27 13:25:34,380 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 13:25:34,380 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:25:43 UTC)" executed successfully
+2025-06-27 13:25:34,381 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 13:25:35,383 - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 13:25:35,383 - INFO - Agent notifier_001: Sending notification, confidence 87.0%
+2025-06-27 13:25:43,376 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:25:53 UTC)" (scheduled at 2025-06-27 13:25:43.375099+00:00)
+2025-06-27 13:25:43,377 - INFO - Agent processor_001: Running data fetch
+2025-06-27 13:25:43,378 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 13:25:43,406 - INFO - Total messages exchanged: 24
+2025-06-27 13:25:44,381 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 13:25:44,382 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:25:53 UTC)" executed successfully
+2025-06-27 13:25:44,383 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 13:25:45,384 - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 13:25:45,385 - INFO - Agent notifier_001: Sending notification, confidence 88.0%
+2025-06-27 13:25:51,677 - INFO - Starting Multi-Agent System...
+2025-06-27 13:25:51,678 - INFO - Registered agent: processor_001
+2025-06-27 13:25:51,679 - INFO - Registered agent: analyzer_001
+2025-06-27 13:25:51,680 - INFO - Registered agent: notifier_001
+2025-06-27 13:25:51,683 - INFO - Agent processor_001 (data_processor) started
+2025-06-27 13:25:51,685 - INFO - Agent analyzer_001 (analyzer) started
+2025-06-27 13:25:51,686 - INFO - Agent notifier_001 (notifier) started
+2025-06-27 13:25:51,690 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-27 13:25:51,691 - INFO - Scheduled data fetch every 10 seconds
+2025-06-27 13:25:51,694 - INFO - Added job "DataProcessorAgent.scheduled_data_fetch" to job store "default"
+2025-06-27 13:25:51,695 - INFO - Scheduler started
+2025-06-27 13:25:51,696 - INFO - System started
+2025-06-27 13:25:51,697 - INFO - System running. Press Ctrl+C to stop...
+2025-06-27 13:26:01,691 - INFO - Running job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:26:11 UTC)" (scheduled at 2025-06-27 13:26:01.689863+00:00)
+2025-06-27 13:26:01,692 - INFO - Agent processor_001: Running data fetch
+2025-06-27 13:26:01,694 - INFO - Agent processor_001: Processing 5 records
+2025-06-27 13:26:01,698 - INFO - Total messages exchanged: 0
+2025-06-27 13:26:02,697 - INFO - Message sent from processor_001 to analyzer_001
+2025-06-27 13:26:02,697 - INFO - Job "DataProcessorAgent.scheduled_data_fetch (trigger: interval[0:00:10], next run at: 2025-06-27 13:26:11 UTC)" executed successfully
+2025-06-27 13:26:02,759 - INFO - Agent analyzer_001: Analyzing 5 records
+2025-06-27 13:26:03,760 - INFO - Message sent from analyzer_001 to notifier_001
+2025-06-27 13:26:03,764 - INFO - Agent notifier_001: Sending notification, confidence 86.0%
